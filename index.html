@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    <h2 id="timer"></h2>
+    <h2 id="tryout"></h2>
+    
+    
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"><img src="https://cdn2.iconfinder.com/data/icons/arts-and-music/96/Guitar-512.png"></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/musical-instrument-1424305-1204297.png"></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"><img src="https://cdn4.iconfinder.com/data/icons/solidix-musical-instruments/128/music_instrument-17-512.png"></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"><img src="http://cdn.onlinewebfonts.com/svg/img_41587.png"></button>
+      <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"><img src="https://cdn4.iconfinder.com/data/icons/solidix-musical-instruments/128/music_instrument-10-512.png"></button>
+      <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)"><img src="https://static.thenounproject.com/png/22866-200.png"></button>
+    </div>
+
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
